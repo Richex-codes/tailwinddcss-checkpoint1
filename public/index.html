@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-image: radial-gradient(
+          rgb(37 99 235),
+          rgb(147 197 253),
+          rgb(219 234 254)
+        );
+      }
+
+      .img {
+        position: absolute;
+        width: 35%;
+        top: -40px;
+      }
+
+      .img2 {
+        width: 40%;
+        filter: invert(100%);
+      }
+
+      .img-container {
+        position: relative;
+      }
+
+      .div1 {
+        background-color: #222222;
+      }
+
+      .img3 {
+        width: 83px;
+      }
+
+      .img4 {
+      }
+      /* .img4-text {
+        width: 100%;
+      } */
+
+      .img4 img {
+        width: 85%;
+      }
+
+      .section1 {
+        margin: 0 240px;
+      }
+
+      .section2 {
+        background-image: linear-gradient(
+          white,
+          rgb(219 234 254),
+          rgb(147 197 253),
+          rgb(37 99 235)
+        );
+      }
+      /* 
+     media query for my first picture */
+      @media (max-width: 1280px) {
+        .img {
+          width: 40%;
+        }
+        .img2 {
+          width: ;
+        }
+      }
+
+      @media (max-width: 1024px) {
+        .img {
+          width: 50%;
+        }
+        .img2 {
+          width: 45%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .img {
+          width: 55%;
+        }
+        /* .img2 {
+          width: 50%;
+        } */
+      }
+
+      @media (min-width: 768px) {
+        .img4 {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .img {
+          width: 68%;
+        }
+        /* .img2 {
+          width: 68%;
+        } */
+      }
+
+      @media (max-width: 500px) {
+        .img {
+          width: 80%;
+        }
+        /* .img2 {
+          width: %;
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-blue-300 m-0 container-fluid md:pt-2">
+      <div
+        class="container-fluid flex justify-between items-center bg-white md:bg-transparent p-6 md:p-0"
+      >
+        <a
+          class="text-2xl text-black no-underline font-bold tracking-wider md:ms-20 ms-6"
+          href="#"
+          >Igwe Richard</a
+        >
+        <div class="hidden md:flex">
+          <a class="no-underline font-thin ms-6 text-black" href="#">Home</a>
+          <a class="no-underline font-thin ms-6 text-black" href="#">Contact</a>
+          <a class="no-underline font-thin ms-6 text-black" href="#"
+            >Projects</a
+          >
+        </div>
+
+        <a
+          class="border-solid border-2 border-blue-600 rounded-3xl py-4 px-7 no-underline me-20 hover:bg-blue-600 hidden md:block text-black"
+          href="#"
+          >Let's Talk</a
+        >
+
+        <div
+          class="md:hidden block md:me-20 me-6 text-2xl cursor-pointer"
+          id="burger"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="bg-white p-2 text-center hidden md:hidden" id="menu">
+        <ul class="list-none">
+          <li class="mb-4">
+            <a class="no-underline font-thin ms-6 text-black" href="#">Home</a>
+          </li>
+          <li class="mb-4">
+            <a class="no-underline font-thin ms-6 text-black" href="#"
+              >Contact</a
+            >
+          </li>
+          <li class="mb-4">
+            <a class="no-underline font-thin ms-6 text-black" href="#"
+              >Projects</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <h2 class="text-5xl text-center mt-7 p-6">
+        Innovative Software Solutions for Your Business
+      </h2>
+
+      <div class="flex justify-center mt-10 pt-28 img-container">
+        <img
+          class="img2"
+          src="./images/hero_overlaywhite_3-1_pn4iTD2N.webp"
+          alt=""
+        />
+
+        <img class="img" src="./images/MAIN_HdQ1wHr1.webp" alt="" />
+      </div>
+
+      <div
+        class="container-fluid div1 mt-20 flex justify-around lg:p-20 flex-col lg:flex-row gap-10 py-20 px-10"
+      >
+        <div class="flex gap-3 items-center">
+          <div>
+            <img
+              class="img3"
+              src="./images/logoipsum-264_HdQ1wHr1.webp"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="text-white text-2xl">Company name</h3>
+            <p class="text-white">1 years experience</p>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <div>
+            <img
+              class="img3"
+              src="./images/logoipsum-296_HdQ1wHr1.webp"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="text-white text-2xl">Company name</h3>
+            <p class="text-white">1 years experience</p>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <div>
+            <img
+              class="img3"
+              src="./images/logoipsum-327_HdQ1wHr1.webp"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="text-white text-2xl">Company name</h3>
+            <p class="text-white">1 years experience</p>
+          </div>
+        </div>
+
+        <div class="flex gap-3 items-center">
+          <div>
+            <img class="img3" src="./images/Path-172991_HdQ1wHr1.webp" alt="" />
+          </div>
+          <div>
+            <h3 class="text-white text-2xl">Company name</h3>
+            <p class="text-white">1 years experience</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section2">
+      <div class="">
+        <h2 class="text-5xl text-center p-6">
+          Experienced Software Engineer at Your Service
+        </h2>
+      </div>
+
+      <div
+        class="justify-center container-fluid section1 pt-10 grid lg:grid-cols-2"
+      >
+        <div class="img4 flex justify-center mb-4 lg:mb-0">
+          <img src="./images/darkmansideways.webp" alt="" />
+        </div>
+
+        <div class="lg:ms-20 flex flex-col justify-center img4-text mb-6">
+          <h2 class="text-5xl">Transforming Ideas into Reality</h2>
+          <p class="leading-6 pt-6">
+            My work represents a fusion of creativity and technical expertise,
+            as I design and develop software solutions that meet your business
+            needs. I am passionate about delivering innovative solutions that
+            surpass expectations and drive value for clients.
+          </p>
+          <a
+            class="pt-8 no-underline font-bold text-black text-xl pb-5"
+            href="#"
+            >My Vision for Software Engineering</a
+          >
+          <hr style="width: 70%" />
+          <a
+            class="pt-8 no-underline font-bold text-black text-xl pb-5"
+            href="#"
+            >My Mission in Software Engineering</a
+          >
+          <hr style="width: 70%" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="pt-24 lg:mx-60 mx-4 flex flex-col gap-28">
+        <div class="grid xl:grid-cols-2">
+          <div>
+            <h2 class="text-5xl font-bold xl:text-start text-center mb-8">
+              Expertise and Proficiency in Software Engineering
+            </h2>
+          </div>
+          <div>
+            <p class="leading-6 text-center xl:text-start">
+              My technical skills in software engineering are diverse and
+              extensive,<br />
+              allowing me to create efficient, reliable, and scalable software
+              solutions. I <br />
+              specialize in programming languages, software development, and
+              innovative solutions, using my expertise to transform ideas into
+              reality.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid xl:grid-cols-4 gap-8">
+          <div
+            style="background-color: #f4f8fd"
+            class="flex flex-col p-10 gap-10 hover:border-1 hover:border-blue-500 hover:border-solid"
+          >
+            <p class="text-blue-500 leading-6">
+              Software Development Engineer, ABC Company
+            </p>
+            <h2 class="text-2xl">ABC Company</h2>
+            <p class="leading-6">
+              Worked on developing a web-based application for managing
+              inventory and sales, using Python and Django framework.
+            </p>
+            <a class="no-underline text-black font-bold" href="#">Read more</a>
+          </div>
+
+          <div
+            style="background-color: #f4f8fd"
+            class="flex flex-col p-10 gap-10 hover:border-1 hover:border-blue-500 hover:border-solid"
+          >
+            <p class="text-blue-500 leading-6">
+              Full-Stack Developer, XYZ Inc.
+            </p>
+            <h2 class="text-2xl">XYZ Inc.</h2>
+            <p class="leading-6">
+              Developed a mobile application for a retail store, using React
+              Native, Redux, and Firebase, leading to a 30% increase in sales.
+            </p>
+            <a class="no-underline text-black font-bold" href="#">Read more</a>
+          </div>
+
+          <div
+            style="background-color: #f4f8fd"
+            class="flex flex-col p-10 gap-10 hover:border-1 hover:border-blue-500 hover:border-solid"
+          >
+            <p class="text-blue-500 leading-6">
+              Software Engineer, DEF Corporation
+            </p>
+            <h2 class="text-2xl">DEF Corporation</h2>
+            <p class="leading-6">
+              Designed and developed a custom CRM system for a real estate
+              agency, using Laravel framework and MySQL database.
+            </p>
+            <a class="no-underline text-black font-bold" href="#">Read more</a>
+          </div>
+
+          <div
+            style="background-color: #f4f8fd"
+            class="flex flex-col p-10 gap-10 hover:border-1 hover:border-blue-500 hover:border-solid"
+          >
+            <p class="text-blue-500 leading-6">
+              Software Developer, GHI Solutions
+            </p>
+            <h2 class="text-2xl">GHI Solutions</h2>
+            <p class="leading-6">
+              Collaborated with a team of developers to create a
+              blockchain-based platform for secure data sharing, using Ethereum
+              and Solidity programming languages.
+            </p>
+            <a class="no-underline text-black font-bold" href="#">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background-color: #f4f8fd" class="section4 mt-28">
+      <div>
+        <div class="lg:mx-60 mx-6 pt-16">
+          <div>
+            <h2 class="text-5xl text-center mb-4">
+              Innovative and Reliable Software Engineer
+            </h2>
+          </div>
+          <div class="flex justify-center">
+            <p class="text-center mb-4 xl:px-40">
+              As a software engineer, I am committed to delivering innovative
+              and reliable software solutions that surpass expectations. With a
+              broad range of technical skills and experience, I can help
+              transform your ideas into reality and drive growth for your
+              business.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="grid xl:grid-cols-2 justify-center mx-4 lg:mx-60 gap-10 pt-10"
+        >
+          <div class="p-5 border-1 border-blue-500 border-solid">
+            <div class="p-12 flex flex-col gap-8">
+              <i class="fa-regular fa-circle-check text-3xl"></i>
+              <h2 class="text-3xl">Python Programming</h2>
+              <p>
+                I have extensive experience in Python programming, using it to
+                develop web applications, data analysis, and machine learning
+                models.
+              </p>
+              <a class="no-underline text-black" href="#">Read more</a>
+            </div>
+          </div>
+
+          <div class="p-5 border-1 border-blue-500 border-solid">
+            <div class="p-12 flex flex-col gap-8">
+              <i class="fa-regular fa-circle-check text-3xl"></i>
+              <h2 class="text-3xl">Javascript Programming</h2>
+              <p>
+                I have extensive experience in Python programming, using it to
+                develop web applications, data analysis, and machine learning
+                models.
+              </p>
+              <a class="no-underline text-black" href="#">Read more</a>
+            </div>
+          </div>
+
+          <div class="p-5 border-1 border-blue-500 border-solid">
+            <div class="p-12 flex flex-col gap-8">
+              <i class="fa-regular fa-circle-check text-3xl"></i>
+              <h2 class="text-3xl">React native development</h2>
+              <p>
+                I have extensive experience in Python programming, using it to
+                develop web applications, data analysis, and machine learning
+                models.
+              </p>
+              <a class="no-underline text-black" href="#">Read more</a>
+            </div>
+          </div>
+
+          <div class="p-5 border-1 border-blue-500 border-solid">
+            <div class="p-12 flex flex-col gap-8">
+              <i class="fa-regular fa-circle-check text-3xl"></i>
+              <h2 class="text-3xl">Java programming</h2>
+              <p>
+                I have extensive experience in Python programming, using it to
+                develop web applications, data analysis, and machine learning
+                models.
+              </p>
+              <a class="no-underline text-black" href="#">Read more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-16 flex flex-col gap-6 items-center justify-center">
+        <div class="flex justify-center lg:px-60">
+          <h2 class="text-3xl text-center">
+            Let's build something great together and transform your ideas into
+            reality. Contact me today to discuss your software needs.
+          </h2>
+        </div>
+        <div class="flex justify-center">
+          <a
+            class="bg-blue-600 text-white no-underline py-4 px-6 rounded-full font-bold hover:border-blue-500 hover:border-1 hover:border-solid hover:bg-white hover:text-black"
+            href="#"
+            >let's talk</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div
+        class="container-fluid flex flex-col md:flex-row justify-around p-12 items-center gap-10"
+      >
+        <h2 class="text-2xl tracking-wider">Igwe Richard</h2>
+
+        <div class="flex gap-6 md:ms-28">
+          <a class="no-underline text-black font-thin" href="#">pricing</a>
+          <a class="no-underline text-black font-thin" href="#">contact</a>
+        </div>
+
+        <div class="flex gap-6">
+          <div
+            style="width: 45px; height: 45px"
+            class="border-1 border-blue-500 border-solid rounded-full flex justify-center items-center hover:bg-blue-500"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div
+            style="width: 45px; height: 45px"
+            class="border-1 border-blue-500 border-solid rounded-full flex justify-center items-center hover:bg-blue-500"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+          <div
+            style="width: 45px; height: 45px"
+            class="border-1 border-blue-500 border-solid rounded-full flex justify-center items-center hover:bg-blue-500"
+          >
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div
+            style="width: 45px; height: 45px"
+            class="border-1 border-blue-500 border-solid rounded-full flex justify-center items-center hover:bg-blue-500"
+          >
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+      <hr style="width: 80%; margin: 0 auto; margin-bottom: 30px" />
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

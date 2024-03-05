@@ -1,0 +1,15 @@
+{
+  "name": "tailwind-checkpoint",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": " tailwindcss -i ./src/input.css -o ./public/output.css --watch"
+  },
+  "author": "richard",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
